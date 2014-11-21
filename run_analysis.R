@@ -232,4 +232,6 @@ names(tidy_dataset) <- c("subject",
                          "mean.fBodyBodyGyroMag_std",
                          "mean.fBodyBodyGyroJerkMag_mean",
                          "mean.fBodyBodyGyroJerkMag_std")
-tidy_dataset
+
+# 6. Save the new dataset in the "date" folder in the working directory
+write.table(tidy_dataset,file="./data/tidy_dataset.txt")
